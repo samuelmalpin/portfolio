@@ -1,0 +1,197 @@
+:root{
+  --bg: #0f1724; /* deep navy */
+  --bg-2: linear-gradient(180deg,#071029 0%, #0f1724 100%);
+  --card: rgba(255,255,255,0.04);
+  --card-2: rgba(255,255,255,0.06);
+  --glass: rgba(255,255,255,0.06);
+  --accent: #3fb0ff; /* bright cyan */
+  --accent-2: #7b61ff; /* violet-ish */
+  --muted: #9aa4b2;
+  --shadow: 0 10px 30px rgba(2,6,23,0.6);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  margin:0;
+  background: var(--bg-2);
+  color: #e6eef8;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{max-width:980px;margin:0 auto;padding:28px}
+
+/* Header */
+.site-header{position:sticky;top:0;backdrop-filter: blur(6px);background:linear-gradient(180deg, rgba(10,14,20,0.6), rgba(10,14,20,0.3));border-bottom:1px solid rgba(255,255,255,0.04);z-index:30}
+.site-header .container{display:flex;align-items:center;gap:18px}
+.brand{font-weight:700;color:var(--accent);text-decoration:none;font-size:18px;letter-spacing:0.4px}
+.nav{margin-left:auto;display:flex;gap:18px;align-items:center}
+.nav a{color:var(--muted);text-decoration:none;padding:8px;border-radius:6px;transition:all .2s ease}
+.nav a:hover{color:var(--accent);transform:translateY(-2px)}
+.nav a:focus{outline:2px dashed rgba(63,176,255,0.28);outline-offset:4px}
+.nav-toggle{display:none;background:none;border:0;font-size:20px;color:var(--muted)}
+
+/* Hero */
+.hero{display:flex;gap:28px;align-items:center;padding:56px 0;position:relative;overflow:visible}
+.hero::before{content:'';position:absolute;right:-10%;top:-10%;width:420px;height:420px;background:radial-gradient(circle at 30% 30%, rgba(63,176,255,0.08), transparent 30%), radial-gradient(circle at 70% 70%, rgba(123,97,255,0.06), transparent 30%);filter: blur(28px);transform:translateZ(0);pointer-events:none}
+.profile{width:150px;height:150px;border-radius:18px;background:linear-gradient(180deg,#ffffff08,#ffffff04);border:1px solid rgba(255,255,255,0.06);box-shadow: var(--shadow);transition:transform .35s cubic-bezier(.2,.9,.2,1), box-shadow .35s}
+.profile:hover{transform:translateY(-6px) rotate(-1deg);box-shadow:0 18px 40px rgba(11,116,222,0.12)}
+.hero-text h1{font-size:28px;margin:0 0 8px}
+.lead{color:var(--muted);font-size:15px}
+
+.cta{margin-top:12px}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#021026;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;box-shadow:0 8px 20px rgba(63,176,255,0.08);transition:transform .18s ease, box-shadow .18s}
+.btn:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(63,176,255,0.14)}
+.btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.08);color:var(--muted);padding:8px 14px;border-radius:10px}
+
+/* Grid & cards */
+.projects-preview .grid,.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015));padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(2,6,23,0.45);transition:transform .28s cubic-bezier(.2,.9,.2,1), box-shadow .28s, border-color .28s}
+.card:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(2,6,23,0.6);border-color:rgba(63,176,255,0.12)}
+.card img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+.card h3{margin:10px 0 6px}
+.card p{color:var(--muted);font-size:14px}
+
+.center{text-align:center}
+
+.site-footer{padding:26px 0;color:var(--muted);font-size:14px;border-top:1px solid rgba(255,255,255,0.02)}
+.cv h1{margin-top:8px}
+.skills{display:flex;gap:8px;flex-wrap:wrap;list-style:none;padding:0}
+.skills li{background:linear-gradient(90deg, rgba(63,176,255,0.08), rgba(123,97,255,0.06));padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600}
+
+/* Links */
+.link{color:var(--accent);text-decoration:none;position:relative}
+.link::after{content:'';position:absolute;left:0;bottom:-2px;height:2px;width:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2));transform:scaleX(0);transform-origin:left;transition:transform .28s}
+.link:hover::after{transform:scaleX(1)}
+
+/* small helpers */
+.muted{color:var(--muted)}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  width: 4px;
+  background: #e9ecef;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 60px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 22px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg);
+}
+
+.timeline-content {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  color: var(--muted);
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #e6eef8;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(15, 23, 36, 0.8); /* Black w/ opacity */
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  position: relative;
+  margin: 5% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  background: var(--bg);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.timeline-content .btn-outline {
+    margin-top: 10px;
+}
+
+@media (max-width:900px){
+  .hero{flex-direction:column;text-align:center;padding:32px 0}
+  .hero::before{display:none}
+}
+
+@media (max-width:720px){
+  .nav{display:none}
+  .nav-toggle{display:block;margin-left:auto}
+  .profile{width:120px;height:120px;border-radius:14px}
+}
+
+/* Respect reduced motion settings */
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+}
+
+/* Accessibility: focus visible */
+:focus{outline:none}
+button:focus,.btn:focus,.nav a:focus{outline:3px solid rgba(63,176,255,0.16);outline-offset:3px}

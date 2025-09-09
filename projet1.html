@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projet 1 Samuel MALPIN</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <meta name="description" content="Présentation du Stage 1 : site vitrine WordPress avec Google Calendar connecté via API. Accès agenda réservé aux utilisateurs authentifiés." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./">Malpin Samuel</a>
+      <nav class="nav">
+        <a href="./">Accueil</a>
+        <a href="./projects.html">Projets</a>
+  <a href="./cv.html">CV</a>
+  <a href="./competences.html">Compétences</a>
+      </nav>
+      <button id="nav-toggle-4" class="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Stage 1 — Site vitrine entreprise</h1>
+    <p class="lead">Fonctionnalité clé : intégration d'un agenda Google Calendar connecté via API avec le téléphone du gérant. L'agenda est visible et modifiable uniquement par un utilisateur authentifié sur le site.</p>
+
+    <div class="grid" style="margin-top:10px">
+      <article class="card">
+        <img src="./assets/image_stage1.png" alt="Aperçu du projet Google Calendar" />
+        <h3>Contexte</h3>
+        <p class="muted">Réalisation d'un site vitrine avec WordPress pour une petite entreprise, avec besoin de gestion d'agenda centralisé et synchronisé avec le smartphone du gérant.</p>
+      </article>
+
+      <article class="card">
+        <h3>Fonctionnalité principale</h3>
+        <ul>
+          <li>Connexion à l'API Google Calendar (OAuth 2.0) pour lier l'agenda du gérant.</li>
+          <li>Synchronisation bidirectionnelle des événements entre le téléphone et le site.</li>
+          <li>Affichage calendrier côté site (lecture) uniquement si l'utilisateur est connecté.</li>
+          <li>Création / modification / suppression d'événements réservées aux comptes autorisés.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Accès et sécurité</h3>
+        <ul>
+          <li>Authentification obligatoire pour voir l'agenda (pas d'accès public).</li>
+          <li>Permissions fines: seuls les rôles autorisés peuvent modifier les événements.</li>
+          <li>Gestion sécurisée des jetons d'accès via le serveur.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Plateforme de communication</h3>
+        <ul>
+          <li>Il a été mis en place un Trello pour que le client puisse suivre l'avancement du projet.</li>
+          <li>Plusieurs réunions ont été organisées pour faire le point sur l'état d'avancement et la modification en amont.</li>
+        </ul>
+        <p><a class="link" target="_blank" href="https://trello.com/b/KzzvRkGk/site">Lien du Trello</a></p>
+      </article>
+
+      <article class="card">
+        <h3>Intégrations techniques</h3>
+        <ul>
+          <li>WordPress (thème léger + code personnalisé pour l'intégration API).</li>
+          <li>Extension "Google Calendar" par token avec une sécurisation par authentification.</li>
+        </ul>
+        <p>
+          <a class="btn btn-outline" href="./projects.html">← Retour aux projets</a>
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+  <p>© <span id="year"></span> Malpin Samuel — <a href="./cv.html">CV</a> — <a href="./cv.html">Contact</a></p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+  </body>
+  </html>
