@@ -1,11 +1,15 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Portfolio étudiant — Malpin Samuel</title>
+  <meta name="description"
+    content="Portfolio de Malpin Samuel, étudiant en BTS SIO SISR. Découvrez mes compétences en administration système, réseau et cybersécurité." />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container">
@@ -13,8 +17,8 @@
       <nav class="nav">
         <a href="./">Accueil</a>
         <a href="./projects.html">Projets</a>
-  <a href="./cv.html">CV</a>
-  <a href="./competences.html">Compétences</a>
+        <a href="./cv.html">CV</a>
+        <a href="./competences.html">Compétences</a>
       </nav>
       <button id="nav-toggle" class="nav-toggle">☰</button>
     </div>
@@ -25,7 +29,8 @@
       <img class="profile" src="./assets/profilepic.jpg" alt="Photo profil" />
       <div class="hero-text">
         <h1>Bonjour — je suis Samuel Malpin</h1>
-        <p class="lead">Étudiant en informatique / développement web. J'aime créer de petits projets pour apprendre et expérimenter.</p>
+        <p class="lead">Étudiant en BTS SIO SISR en 2ème année. J'aime créer de petits projets pour apprendre et
+          expérimenter.</p>
         <p>Sur ce site, vous trouverez une sélection de mes projets, mon CV et une brève présentation.</p>
         <p class="cta">
           <a class="btn" href="./projects.html">Voir mes projets</a>
@@ -40,7 +45,8 @@
         <article class="card">
           <img src="./assets/image_stage1.png" alt="Projet 1" />
           <h3>Stage 1 - Site web entreprise</h3>
-          <p>Petit site vitrine réalisé avec Wordpress. Fonctionnalités : Agenda google connecté via API uniquement accéssible par l'utilisateur authentifié.</p>
+          <p>Petit site vitrine réalisé avec Wordpress. Fonctionnalités : Agenda google connecté via API uniquement
+            accéssible par l'utilisateur authentifié.</p>
           <p><a class="link" href="./projet1.html">Détails</a> • <a class="link" href="#">Site</a></p>
         </article>
 
@@ -51,29 +57,50 @@
           <p><a class="link" href="./hack4scaira.html">Détails</a></p>
         </article>
 
-        <article class="card">
-          <img src="./assets/project-placeholder.svg" alt="Projet 3" />
-          <h3>Projet 3 — Page responsive</h3>
-          <p>Exercice de mise en page responsive et accessibilité. Utilise : CSS Grid / Flexbox.</p>
-          <p><a class="link" href="#">Détails</a></p>
-        </article>
       </div>
       <p class="center"><a class="btn" href="./projects.html">Tous les projets</a></p>
     </section>
 
     <section class="container about">
       <h2>Brève présentation</h2>
-      <p>Étudiant en BTS SIO, option SISR (Solutions d’Infrastructure, Systèmes et Réseaux). J’apprends l’administration systèmes et réseaux, la virtualisation, la mise en place de services (AD, DNS, DHCP), le scripting (Bash/PowerShell), la supervision et les bases de la sécurité.</p>
-      <p>Passionné par l’univers de la cybersécurité et de l’informatique en général, je progresse à travers des projets concrets et une veille technique régulière.</p>
+      <p>Étudiant en BTS SIO, option SISR (Solutions d’Infrastructure, Systèmes et Réseaux), je développe des
+        compétences clés pour l'administration et la sécurisation des infrastructures :</p>
+      <div class="grid skills-grid">
+        <div class="card skill-card">
+          <h3>Systèmes & Réseaux</h3>
+          <p>Installation et maintenance de serveurs (Windows/Linux) et équipements réseaux.</p>
+        </div>
+        <div class="card skill-card">
+          <h3>Cybersécurité</h3>
+          <p>Politiques de sécurité, pare-feu, VPN et sensibilisation aux risques.</p>
+        </div>
+        <div class="card skill-card">
+          <h3>Services Réseaux</h3>
+          <p>Déploiement de services essentiels (DNS, DHCP, AD, LDAP).</p>
+        </div>
+        <div class="card skill-card">
+          <h3>Virtualisation</h3>
+          <p>Gestion d'environnements virtuels (Proxmox, VirtualBox).</p>
+        </div>
+        <div class="card skill-card">
+          <h3>Automatisation</h3>
+          <p>Scripting pour l'administration (Bash, PowerShell).</p>
+        </div>
+      </div>
+
+      <p>Passionné par l’univers de la cybersécurité et de l’informatique en général, je progresse à travers des projets
+        concrets et une veille technique régulière.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Malpin Samuel — <a href="./cv.html">CV</a> — <a href="./cv.html">Contact</a></p>
+      <p>© <span id="year"></span> Malpin Samuel — <a href="./cv.html">CV</a> — <a
+          href="mailto:votre.email@exemple.com">Contact</a></p>
     </div>
   </footer>
 
   <script src="./js/script.js"></script>
 </body>
+
 </html>
