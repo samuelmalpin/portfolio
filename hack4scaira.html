@@ -24,6 +24,7 @@
   <main class="container">
     <h1>Projet HACK4SCAIRA</h1>
     <p class="lead">Un hackathon de 48h à Rochefort, du 14 au 15 mars 2025. Notre équipe de 4 étudiants a travaillé sur une solution innovante pour l'industrie aéronautique. Ce projet est un excellent exemple de ma compétence en "travail en mode projet".</p>
+    <p><a class="link" href="https://www.aerospace-valley.com/agenda/hack4scaira" target="_blank" rel="noopener noreferrer">Voir l'article officiel Hack4Scaira</a></p>
 
     <h2>Méthodologie</h2>
     <p>Pour mener à bien ce défi en temps limité, nous avons adopté une méthodologie aprise par un ingénieur d'AIRBUS. Voici les grandes étapes de notre démarche :</p>
@@ -65,16 +66,22 @@
     <h2>Illustrations du Hackathon</h2>
     <div class="grid" style="margin-top:20px">
       <article class="card">
-        <img src="./assets/hack4scaira1.jpg" alt="L'équipe en plein travail" />
+        <button type="button" class="image-zoom-trigger btn-modal" data-modal-target="#image-modal-hack-1" aria-label="Agrandir l'image de l'équipe en plein travail">
+          <img src="./assets/hack4scaira1.jpg" alt="L'équipe en plein travail" />
+        </button>
         <p class="muted">Session de brainstorming avec l'équipe.</p>
       </article>
       <article class="card">
-        <img src="./assets/project-placeholder.svg" alt="Image 2 du hackathon" />
+        <button type="button" class="image-zoom-trigger btn-modal" data-modal-target="#image-modal-hack-2" aria-label="Agrandir l'image de la démo de l'application">
+          <img src="./assets/hackathon-app.png" alt="Démo de l'application" />
+        </button>
         <p class="muted">Développement et codage.</p>
       </article>
       <article class="card">
-        <img src="./assets/project-placeholder.svg" alt="Image 3 du hackathon" />
-        <p class="muted">Présentation finale devant le jury.</p>
+        <button type="button" class="image-zoom-trigger btn-modal" data-modal-target="#image-modal-hack-3" aria-label="Agrandir l'image du script Python du projet">
+          <img src="./assets/hackathon-scriptpy.png" alt="Script Python du projet" />
+        </button>
+        <p class="muted">Script python fictif pour détéction des transporteurs hors ligne.</p>
       </article>
     </div>
 
@@ -106,6 +113,27 @@
     <div class="modal-content">
       <span class="modal-close">&times;</span>
       <img src="./assets/methodologie_etape1.jpg" alt="Illustration étape 1 - Brainstorming et caractérisation" class="modal-image">
+    </div>
+  </div>
+
+  <div id="image-modal-hack-1" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="./assets/hack4scaira1.jpg" alt="L'équipe en plein travail agrandie" class="modal-image">
+    </div>
+  </div>
+
+  <div id="image-modal-hack-2" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="./assets/hackathon-app.png" alt="Démo de l'application agrandie" class="modal-image">
+    </div>
+  </div>
+
+  <div id="image-modal-hack-3" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="./assets/hackathon-scriptpy.png" alt="Script Python du projet agrandi" class="modal-image">
     </div>
   </div>
 

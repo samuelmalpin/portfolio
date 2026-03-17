@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Capture The Flag — La Rochelle 2026 | Samuel MALPIN</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <meta name="description" content="Retour d'expérience sur ma participation au Capture The Flag du 12 février 2026 à La Rochelle, organisé par CESI, Yogosha et Campus Cyber 17." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./">Malpin Samuel</a>
+      <nav class="nav">
+        <a href="./">Accueil</a>
+        <a href="./projects.html">Projets</a>
+        <a href="./cv.html">CV</a>
+        <a href="./competences.html">Compétences</a>
+      </nav>
+      <button id="nav-toggle-5" class="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Capture The Flag — La Rochelle (12/02/2026)</h1>
+    <p class="lead">Participation à un challenge de cybersécurité organisé par CESI, Yogosha et Campus Cyber 17, sur le campus CESI de La Rochelle.</p>
+
+    <div class="grid" style="margin-top:10px">
+      <article class="card">
+        <button type="button" class="image-zoom-trigger btn-modal" data-modal-target="#image-modal-ctf" aria-label="Agrandir la photo du CTF">
+          <img src="./assets/CTF-int.png" alt="Capture The Flag La Rochelle 2026" />
+        </button>
+        <h3>Contexte de l'événement</h3>
+        <p class="muted">Événement du jeudi 12 février 2026, de 18h à 22h, centré sur la pratique offensive et défensive en cybersécurité à travers des défis techniques.</p>
+      </article>
+
+      <article class="card">
+        <h3>Objectif du CTF</h3>
+        <p>Le principe était de récupérer des "flags" cachés en résolvant plusieurs épreuves, dans un cadre légal et éthique qui simule des scénarios d'intrusion réels.</p>
+      </article>
+
+      <article class="card">
+        <h3>Types de challenges réalisés</h3>
+        <ul>
+          <li>Cryptographie : déchiffrement de messages.</li>
+          <li>Stéganographie : extraction d'informations dissimulées.</li>
+          <li>Vulnérabilités web : identification et exploitation de failles.</li>
+          <li>Reverse engineering : approche de l'analyse binaire.</li>
+          <li>Forensic : Analyse d'un dump RAM d'un pc.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Compétences mobilisées</h3>
+        <ul>
+          <li>Analyse méthodique et résolution de problèmes.</li>
+          <li>Travail en équipe sous contrainte de temps.</li>
+          <li>Recherche technique rapide et validation d'hypothèses.</li>
+          <li>Culture cyber offensive/défensive et bonnes pratiques.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <button type="button" class="image-zoom-trigger btn-modal" data-modal-target="#image-modal-ctf-res" aria-label="Agrandir l'image de mes résultats CTF">
+          <img src="./assets/ctf-res.png" alt="Résultats CTF" />
+        </button>
+        <h3>Mes résultats</h3>
+        <p class="muted">Aperçu de mon classement et de mes performances a la fin de ce challenge, nous étions dans le top 3 la plupart du temps mais dans le rush des 5 dernières minutes de ces 4 heures nous avont été dépassés par deux équipes ce qui nous à valu le top 5.</p>
+      </article>
+
+      <article class="card">
+        <button type="button" class="image-zoom-trigger btn-modal" data-modal-target="#image-modal-ctf-solve" aria-label="Agrandir l'image des flags trouvés">
+          <img src="./assets/ctf-solve.png" alt="Flags trouvés pendant le CTF" />
+        </button>
+        <h3>Flags trouvés</h3>
+        <p class="muted">Capture des épreuves validées et des flags récupérés pendant l'événement.</p>
+      </article>
+
+      <article class="card">
+        <h3>Bilan personnel</h3>
+        <p>Cette participation m'a permis de renforcer mes compétences pratiques en cybersécurité et de progresser sur des cas concrets, dans une ambiance compétitive et collaborative.</p>
+        <p><a class="link" href="https://la-rochelle.cesi.fr/agenda/capture-the-flag-un-challenge-de-cybersecurite-organise-par-cesi-yogosha-et-campus-cyber/" target="_blank" rel="noopener noreferrer">Voir la page officielle de l'événement</a></p>
+      </article>
+    </div>
+
+    <p style="text-align:center; margin-top:20px;">
+      <a class="btn btn-outline" href="./projects.html">← Retour aux projets</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Malpin Samuel — <a href="./cv.html">CV</a> — <a href="./cv.html">Contact</a></p>
+    </div>
+  </footer>
+
+  <div id="image-modal-ctf" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="./assets/CTF-int.png" alt="Capture The Flag La Rochelle 2026 agrandi" class="modal-image">
+    </div>
+  </div>
+
+  <div id="image-modal-ctf-res" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="./assets/ctf-res.png" alt="Résultats CTF agrandis" class="modal-image modal-image-ctf-res">
+    </div>
+  </div>
+
+  <div id="image-modal-ctf-solve" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="./assets/ctf-solve.png" alt="Flags trouvés agrandis" class="modal-image">
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
