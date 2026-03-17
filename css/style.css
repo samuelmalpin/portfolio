@@ -55,6 +55,15 @@ body{
 .card h3{margin:10px 0 6px}
 .card p{color:var(--muted);font-size:14px}
 
+.projects-page .stage2-card img{
+  background:#fff;
+  padding:8px;
+  width:94%;
+  height:130px;
+  margin:0 auto;
+  display:block;
+}
+
 .center{text-align:center}
 
 .site-footer{padding:26px 0;color:var(--muted);font-size:14px;border-top:1px solid rgba(255,255,255,0.02)}
